@@ -6,12 +6,14 @@
   </head>
   <style>
 	#header-div{
+	  position: absolute;
 	  display: block;
 	  width: 100%;
-	  height: 100px;
+	  height: 130px;
 	  top: 0px;
 	  left: 0px;
 	  box-sizing: border-box;
+	  border-bottom: 1px solid black;
 	}
 	#search-div{
 	  position: relative;
@@ -25,20 +27,20 @@
 	#search-div-image{
 	  position: absolute;
 	  display: block;
-	  width: 150px;
+	  width: 130px;
 	  height: 75%;
 	  margin-left: 30px;
 	  top:5px;
 	}
 	#searchbar-div{
 	  position: absolute;
-	  width: 600px;
+	  width: 700px;
 	  height: 45px;
-	  margin-left: 250px;
+	  margin-left: 200px;
 	}
 	#searchbar{
 	  position: absolute;
-	  width: 600px;
+	  width: 700px;
 	  height: 45px;
 	  border: 1px solid #ccc;
 	  border-radius: 25px;
@@ -72,12 +74,25 @@
 	  top: 3px;
 	  right: 3px;
 	}
+	#search-options-div{
+	  position: absolute;
+	  width: auto;
+	  height: 50px;
+	  left: 200px;
+	  bottom: 0px;
+	}
+	.search-option-anchors{
+	  display: inline-block;
+	  width: 80px;
+	  height: 50px;
+	  text-align: center;
+	}
 	.test{
 	  border: 1px solid black;
 	}
   </style>
   <body style="margin: 0px">
-    <div id="header-div" class="test">
+    <div id="header-div">
 	  <div id="search-div" class="test">
 		<div id="search-div-image" class="test"></div>
 		<div id="searchbar-div">
@@ -88,6 +103,16 @@
 		  <div id="apps" class="test"></div>
 		  <div id="signin" class="test"></div>
 		</div>
+	  </div>
+	  <div id="search-options-div" class="test">
+		<a class="search-option-anchors" href="">All</a>
+		<a class="search-option-anchors" href="">News</a>
+		<a class="search-option-anchors" href="">Maps</a>
+		<a class="search-option-anchors" href="">Videos</a>
+		<a class="search-option-anchors" href="">Shopping</a>
+		<a class="search-option-anchors" href="">More</a>
+		<a class="search-option-anchors" style="margin-left: 75px;" href="">Settings</a>
+		<a class="search-option-anchors" href="">Tools</a>
 	  </div>
 	</div>
   </body>
