@@ -19,6 +19,15 @@
 	  font-weight: lighter;
 	  width: max-content;
 	}
+	button{
+	  border: none;
+	  background: transparent;
+	  margin: 0px;
+	  padding: 0px;
+	  height: 35px;
+	  width: 35px;
+	  cursor: pointer;
+	}
 	#header-div{
 	  position: relative;
 	  display: block;
@@ -45,6 +54,7 @@
 	  height: 75%;
 	  margin-left: 30px;
 	  top:5px;
+	  cursor: pointer;
 	}
 	#searchbar-div{
 	  position: absolute;
@@ -65,7 +75,8 @@
 	  width: 30px;
 	  height: 30px;
 	  right: 10px;
-	  top: 10px;
+	  top: 7px;
+	  cursor: pointer;
 	}
 	#apps-div{
 	  position: absolute;
@@ -76,17 +87,20 @@
 	}
 	#apps{
 	  position: absolute;
-	  width: 50px;
+	  width: 30px;
 	  height: 30px;
 	  top: 3px;
-	  left: 3px;
+	  left: 40%;
+	  cursor: pointer;
+	  opacity: 0.8;
 	}
 	#signin{
 	  position: absolute;
-	  width: 50px;
-	  height: 30px;
-	  top: 3px;
+	  width: 35px;
+	  height: 35px;
+	  top: 0px;
 	  right: 3px;
+	  cursor: pointer;
 	}
 	#search-options-div{
 	  position: absolute;
@@ -126,6 +140,16 @@
 	  bottom: 0px;
 	  color: #666;
 	}
+	#mag-img{
+	  background: url('https://www.google.com/images/searchbox/desktop_searchbox_sprites302_hr.webp') -4px -4px;
+	  height: 30px;
+	  width: 30px;
+	  transform: scale(68%);
+	}
+	#doodle-img{
+	  height: 44px;
+	  width: 120px;	
+	}
 	.related-search-col{
 	  display: inline-block;
 	  font-size: 14px;
@@ -161,24 +185,36 @@
 	.margin{
 	  margin-left: 200px;
 	}
-	.test{
-	  border: 1px solid black;
-	}
   </style>
   <body style="margin: 0px">
     <div id="header-div">
-	  <div id="search-div" class="test">
-		<div id="search-div-image" class="test"></div>
+	  <div id="search-div">
+		<div id="search-div-image">
+		  <img src="https://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-pac-man-2010-6753651837108775-s.png" id="doodle-img">
+		</div>
 		<div id="searchbar-div">
 			<input id="searchbar" type="text">
-			<div id="searchbar-img" class="test"></div>
+			<div id="searchbar-img">
+			  <button type="button">
+			   <img id="mag-img">
+			  </button>
+			</div>
 		</div>
-		<div id="apps-div" class="test">
-		  <div id="apps" class="test"></div>
-		  <div id="signin" class="test"></div>
+		<div id="apps-div">
+		  <div id="apps">
+			<svg viewbox="0 0 24 24">
+			  <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+			  </path
+			</svg>
+		  </div>
+		  <div id="signin">
+		    <svg viewbox="0 0 30 30">
+			  <g color="#78909c"><circle cx="15" cy="15" r="14" stroke="currentColor" fill="currentColor"/></g>
+			</svg>
+		  </div>
 		</div>
 	  </div>
-	  <div id="search-options-div" class="test">
+	  <div id="search-options-div">
 		<a class="search-option-anchors" href="">All</a>
 		<a class="search-option-anchors" href="">News</a>
 		<a class="search-option-anchors" href="">Maps</a>
@@ -200,43 +236,43 @@
 	  <a href="">About Featured Snippets</a>
 	  <a href="" style="margin-left: 20px;">Feedback</a>
 	</div>
-	<div class="margin result-div test">
+	<div class="margin result-div">
 	  <a href="" class="domain-text">christine-27.github.io</a>
 	  <a href=""><h3>build this webpage - GitHub Pages</h3></a>
 	  <p>TO CREATE A WEBSITE WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION: Log in to your hosting account. Go to your control panel. Look for the “WordPress” or “Website” icon. Choose the domain where you want to install your website.
       </p>
 	</div>
-	<div class="margin result-div test">
+	<div class="margin result-div">
 	  <a href="" class="domain-text">arstechnica.com</a>
 	  <a href=""><h3>With zero coding experience, artist building 180 webpages in ...</h3></a>
 	  <p>Jul 26, 2013 - One of Jennifer Dewalt's creations, this webpage lets visitors create paintings in ... Build a different website every day for 180 consecutive days.</p>
 	</div>
-	<div class="margin result-div test">
+	<div class="margin result-div">
   	  <a href="" class="domain-text">buildthis.com</a>
 	  <a href=""><h3>BuildThis: Chicago Web Design Illinois Website Design</h3></a>
 	  <p>If you're looking to build a new website, begin a website redesign, build an eCommerce website, or anything in between, we'll work with you to create a custom ...</p>
 	</div>
-	<div class="margin result-div test">
+	<div class="margin result-div">
   	  <a href="" class="domain-text">www.squarespace.com</a>
 	  <a href=""><h3>Squarespace: Build a Website - Website Builder</h3></a>
 	  <p>Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...</p>
 	</div>
-	<div class="margin result-div test">
+	<div class="margin result-div">
   	  <a href="" class="domain-text">www.buildthis.io</a>
 	  <a href=""><h3>How to Build A Website: A-to-Z Beginner Guide - BuildThis.io</h3></a>
 	  <p>Apr 21, 2020 - In this article, I will show you the essential steps in creating a website. Register a domain name; Signup for a web hosting; Design your ...</p>
 	</div>
-	<div class="margin result-div test">
+	<div class="margin result-div">
   	  <a href="" class="domain-text">www.websitebuilderexpert.com</a>
 	  <a href=""><h3>How to Build a Website 2020 | The Complete Beginner's Guide</h3></a>
 	  <p>Apr 22, 2020 - How to Build a Website: the Step-by-Step Guide to Easy Setup. We'll look at how to make a website with both a website builder and WordPress, ...</p>
 	</div>
-	<div class="margin result-div test">
+	<div class="margin result-div">
   	  <a href="" class="domain-text">www.pcmag.com</a>
 	  <a href=""><h3>How to Create a Website | PCMag</h3></a>
 	  <p>If you need to quickly build a simple website, starting with a blogging service is a great way to go. The major player in the blog game is WordPress, a content ...</p>
 	</div>
-	<div class="margin result-div test">
+	<div class="margin result-div">
   	  <a href="" class="domain-text">www.codecademy.com</a>
 	  <a href=""><h3>Make a Website | Codecademy</h3></a>
 	  <p>Explore HTML & CSS fundamentals as you build a website in this introductory web development course. Start. Overview Syllabus. Why Learn HTML and CSS?</p>
@@ -246,10 +282,10 @@
 	  <a href=""><h3>Webnode: Create a free website easily | Free website builder</h3></a>
 	  <p>You can create and own your website for free for unlimited time. Make a website at ... Join our 40 million users and build one yourself. Get started for free ...</p>
 	</div>
-	<div id="related-searches-div" class="test">
+	<div id="related-searches-div">
 	  <h3>Searches related to build this webpage</h3>
 	</div>
-	<div class="margin test">
+	<div class="margin">
 	  <div class="related-search-col">
 	    <p><a href="">ways to build a website</a></p>
 	    <p><a href="">how to build and maintain a website</a></p>
